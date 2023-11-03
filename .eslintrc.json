@@ -1,0 +1,37 @@
+{
+  "root": true,
+  "parserOptions": {
+    "project": ["./tsconfig.json", "./tsconfig.vite.json"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "alias": [["@", "./src"]]
+    }
+  },
+  "extends": [
+    "alloy",
+    "alloy/react",
+    "alloy/typescript",
+    "prettier",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["prettier"],
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true
+  },
+  "globals": {},
+  "rules": {
+    "prettier/prettier": "off",
+    "no-return-assign": "off",
+    "@typescript-eslint/no-unused-vars": ["warn", { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }],
+    "@typescript-eslint/no-empty-interface": "warn",
+    "@typescript-eslint/consistent-type-definitions": "warn",
+    "@typescript-eslint/ban-types": "warn"
+  },
+  "ignorePatterns": ["dist", "node_modules"]
+}
