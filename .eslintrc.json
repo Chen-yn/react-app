@@ -31,7 +31,9 @@
     "@typescript-eslint/no-unused-vars": ["warn", { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }],
     "@typescript-eslint/no-empty-interface": "warn",
     "@typescript-eslint/consistent-type-definitions": "warn",
-    "@typescript-eslint/ban-types": "warn"
+    "@typescript-eslint/ban-types": "warn",
+    "react/jsx-curly-brace-presence": ["off", { "children": "never", "props": "always" }],
+    "@typescript-eslint/no-explicit-any": "off"
   },
   "ignorePatterns": ["dist", "node_modules"]
 }

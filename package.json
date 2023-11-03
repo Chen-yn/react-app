@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "test": "echo Error: no test specified && exit 1",
-    "start:dev": "vite --mode development",
+    "dev": "vite --mode development",
     "start:test": "vite --mode testing",
-    "start:staging": "vite --mode staging",
-    "start:prod": "vite --mode production",
+    "staging": "vite --mode staging",
+    "prod": "vite --mode production",
     "build": "pnpm build:prod",
     "build:dev": "pnpm tsc && vite build --mode development",
     "build:test": "pnpm tsc && vite build --mode testing",
@@ -35,6 +35,8 @@
     "zustand": "^4.4.6"
   },
   "devDependencies": {
+    "@ant-design/icons": "^5.2.6",
+    "@ant-design/pro-components": "^2.6.35",
     "@types/node": "^20.8.10",
     "@types/react": "^18.2.34",
     "@types/react-dom": "^18.2.14",

@@ -7,7 +7,7 @@ export default () => {
   };
   return (
     <>
-      <h1>About Page</h1>
+      <h1>404</h1>
       <button onClick={goBack}>返回</button>
     </>
   );
